@@ -223,13 +223,6 @@ tfoot td {
         width: 500px;
     }
 
-    .contact input,
-    .contact label,
-    .contact select {
-        width: auto;
-        display: inline-block;
-    }
-
     .inln {
         width: auto;
         display: inline-block;
