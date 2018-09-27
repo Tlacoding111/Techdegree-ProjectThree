@@ -118,6 +118,10 @@ legend {
 
 input:focus,
 textarea:focus {
+    background-color: #111d30;
+    transition-timing-function: ease-out;
+    transition: 1s;
+    color:white;
     border-color: #52bab3;
 }
 
@@ -127,6 +131,10 @@ input[type="checkbox"]:checked + label {
 
 input[type="radio"]:checked + label {
     font-weight: bold;
+}
+
+input::placeholder {
+    text-align: right;
 }
 
 /*========Newsletter========*/
