@@ -17,11 +17,40 @@
 
             <h1 id="sign">Sign Up</h1>
 
-            <input type="text" id="name" name="user_name">
-            <input type='email' id="mail" name="user_email">
-            <input type="number" id="number" name="user_number">
+            <fieldset>
+                <legend><span class="number">1</span><strong>Contact Information</strong></legend>
 
-            <textarea id="bio" name="user_bio"></textarea>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+
+                <label for="email">Email Address:</label>
+                <input type='email' id="mail" name="user_email">
+
+                <label for="number">Phone Number:</label>
+                <input type="number" id="number" name="user_number">
+
+                <label for="job">Job Role:</label>
+                <select id="job" name="user_job">
+                    <optgroup label="A">
+                        <option value="frontend_developer">Front-End Developer</option>
+                        <option value="php_developer">Php Developer</option>
+                    </optgroup>
+                    <optgroup label="B">
+                        <option value="python_developer">Python Developer</option>
+                        <option value="rails_developer">Rails Developer</option>
+                        <option value="wordpress_developer">Wordpress Developer</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            
+            <fieldset>
+                <legend><span class="number">2</span><strong>Newsletter</strong></legend>
+
+                <label for="bio">Other topics you'd like to hear about:</label>
+                <textarea id="bio" name="user_bio"></textarea>
+            </fieldset>
+                
+            <button type="submit">Sign Up</button>
 
         </form>
 

@@ -1,6 +1,5 @@
 /*========Basics Element Styles========*/
 
-
 /*========Form========*/
 form {
     max-width: 300px;
@@ -12,18 +11,63 @@ form {
 
 #sign {
     text-align: center;
+    margin-bottom: 35px;
 }
 
 input[type="text"],
 input[type="email"],
-input[type="number"],
-textarea {
+input[type="number"] {
     color: blue;
     font-weight: bold;
     background: whitesmoke;
     width: 100%;
     margin-bottom: 15px;
 }
+
+textarea {
+    color: blue;
+    font-weight: bold; 
+}
+
+button {
+    background-color: lightcoral;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    padding: 10px;
+    margin: 20px 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    border-width: 3px;
+}
+
+button:hover {
+    background-color: royalblue;
+    cursor: pointer;
+}
+
+fieldset {
+    margin-bottom: 35px;
+    border: none;
+}
+
+legend {
+    margin-bottom: 15px;
+}
+
+.number {
+    background-color: royalblue;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 100%;
+}
+
 
 /*========Table========*/
   /* table {
