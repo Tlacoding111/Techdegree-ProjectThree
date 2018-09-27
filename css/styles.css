@@ -36,11 +36,12 @@ header {
 
 /*========Form========*/
 form {
-    max-width: 300px;
+    max-width: 100%;
     margin: 10px auto;
     padding: 10px 15px;
     background: lightgray;
-    border-radius: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 #sign {
@@ -218,6 +219,10 @@ tfoot td {
 /*========Media Queries========*/
 
 @media (min-width: 768px){
+    form {
+        width: 500px;
+    }
+
     .inln {
         width: auto;
         display: inline-block;
@@ -226,6 +231,16 @@ tfoot td {
 
     #hr1, 
     #hr2 {
-        width: 22%;
+        width: 37%;
+    }
+
+    header h3,
+    #p1, {
+        font-size: 2em;
+    }
+
+    #p2,
+    footer {
+        font-size: 1.2em;
     }
 }
