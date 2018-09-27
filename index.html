@@ -21,35 +21,79 @@
                 <legend><span class="number">1</span><strong>Contact Information</strong></legend>
 
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name">
+                    <input type="text" id="name" name="user_name">
 
                 <label for="email">Email Address:</label>
-                <input type='email' id="mail" name="user_email">
+                    <input type='email' id="mail" name="user_email">
 
                 <label for="number">Phone Number:</label>
-                <input type="number" id="number" name="user_number">
+                    <input type="number" id="number" name="user_number">
 
-                <label for="state">State:</label>
-                <select id="state" name="user_state">
-                    <optgroup label="A">
-                        <option value="alabama">Alabama</option>
-                        <option value="alaska">Alaska</option>
-                        <option value="arizona">Arizona</option>
-                        <option value="arkansas">Arkansas</option>
-                    </optgroup>
-                    <optgroup label="C">
-                        <option value="california">California</option>
-                        <option value="Colorado">Colorado</option>
-                        <option value="connecticut">Connecticut</option>
-                    </optgroup>
-                </select>
+                <label for="street">Street Address:</label>
+                    <input type="text" id="street" name="user_street">
+                
+                <label for="city">City:</label>
+                    <input type="text" id="city" name="user_city">
+
+                <div class="state">
+                    <label for="state">State:</label>
+                    <select id="state" name="user_state">
+                        <optgroup label="A">
+                            <option value="alabama">Alabama</option>
+                            <option value="alaska">Alaska</option>
+                            <option value="arizona">Arizona</option>
+                            <option value="arkansas">Arkansas</option>
+                        </optgroup>
+                        <optgroup label="C">
+                            <option value="california">California</option>
+                            <option value="Colorado">Colorado</option>
+                            <option value="connecticut">Connecticut</option>
+                        </optgroup>
+                        <optgroup label="C">
+                                <option value="california">California</option>
+                                <option value="Colorado">Colorado</option>
+                                <option value="connecticut">Connecticut</option>
+                        </optgroup>
+                    </select>
+                </div>
+
+                <div class="zip">
+                <label for="zipcode">Zip Code:</label>
+                    <input type="number" id="zipcode" name="user_zipcode">
+                </div>
+
             </fieldset>
             
             <fieldset>
                 <legend><span class="number">2</span><strong>Newsletter</strong></legend>
 
-                <label for="bio">Other topics you'd like to hear about:</label>
-                <textarea id="bio" name="user_bio"></textarea>
+                <label>Select the Newsletters you would like to receive:</label><br>
+                <div class="newsletterFormat">
+                    <input type="checkbox" id="html_news" value="newsletter" name="user_newsletter">
+                        <label for="html_news">HTML News</label><br>
+                    <input type="checkbox" id="css_news" value="newsletter" name="user_newsletter">
+                        <label for="css_news">CSS News</label><br>
+                    <input type="checkbox" id="javascript_news" value="newsletter" name="user_newsletter">
+                        <label for="javascript_news">JavaScript News</label><br>
+                    <input type="checkbox" id="react_news" value="newsletter" name="user_newsletter">
+                        <label for="react_news">React News</label><br>
+                    <input type="checkbox" id="swift_news" value="newsletter" name="user_newsletter">
+                        <label for="swift_news">Swift News</label><br>
+                </div>
+              
+                
+                <label>Newsletter Format:</label><br>
+                <div class="newsletterFormat"></div>
+                    <input type="radio" id="html_format" name="user_newsletterFormat">
+                        <label for="html_format">HTML</label><br>
+                    <input type="radio" id="plaintext_format" name="user_newsletterFormat">
+                        <label for="plaintext_format">Plain Text</label>
+                </div>
+
+                <div class="textarea">
+                    <label for="bio">Other topics you'd like to hear about:</label>
+                    <textarea id="bio" name="user_bio"></textarea>
+                </div>
             </fieldset>
                 
             <button type="submit">Sign Up</button>
