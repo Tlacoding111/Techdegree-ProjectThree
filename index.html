@@ -10,8 +10,16 @@
 
     <body>
         <header>
-            <h1>Hi</h1>
+            <h3>THE CODE REVIEW</h3>
         </header>
+
+        <div class="secondSection">
+            <p id="p1">Sign Up for Our Newsletter</p>
+            <p id="p2">Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+
+        <hr id="hr1">
+        <hr id="hr2">
 
         <form action="index.html" method="post">
 
@@ -94,6 +102,16 @@
                                 <option value="northCarolina">North Carolina</option>
                                 <option value="northDakota">North Dakota</option>
                         </optgroup>
+                        <optgroup label="O">
+                                <option value="ohio">Ohio</option>
+                                <option value="oklahoma">Oklahoma</option>
+                                <option value="oregon">Oregon</option>
+                        </optgroup>
+                        <optgroup label="O">
+                                <option value="ohio">Ohio</option>
+                                <option value="oklahoma">Oklahoma</option>
+                                <option value="oregon">Oregon</option>
+                        </optgroup>
                     </select>
                 </div>
 
@@ -136,41 +154,45 @@
                 </div>
             </fieldset>
                 
-            <button type="submit">Sign Up</button>
-
+            <button type="submit" class="submit inln">Sign Up</button>
+            <button type="reset" class="reset inln">Reset</button>
         </form>
 
+        <table>
+                <caption>New Members</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Job Role</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <td colspan="3">Above are members who filled out the form.</td>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td scope="row" class="name">Brad Pitt</td>
+                        <td>B.Pitt@gmail.com</td>
+                        <td>Manager</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="name">Michael Jordan</td>
+                        <td>M.Jordan@gmail.com</td>
+                        <td>Accountant</td>
+                    </tr>
+                    <tr>
+                        <td scope="row" class="name">Beyonce Carter</td>
+                        <td>B.Carter@gmail.com</td>
+                        <td>Project Manager</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <footer>
+            <p>&copy; The Code Review</p>
+        </footer>
     </body>
 </html>
 
 
-<!-- <table>
-        <caption>New Members</caption>
-        <thead>
-            <tr>
-                <th scope="col">Name</th>
-                <th scope="col">Email</th>
-                <th scope="col">Job Role</th>
-            </tr>
-        </thead>
-        <tfoot>
-            <td colspan="3">Above are members who filled out the form.</td>
-        </tfoot>
-        <tbody>
-            <tr>
-                <td scope="row" class="name">Brad Pitt</td>
-                <td>B.Pitt@gmail.com</td>
-                <td>Manager</td>
-            </tr>
-            <tr>
-                <td scope="row" class="name">Michael Jordan</td>
-                <td>M.Jordan@gmail.com</td>
-                <td>Accountant</td>
-            </tr>
-            <tr>
-                <td scope="row" class="name">Beyonce Carter</td>
-                <td>B.Carter@gmail.com</td>
-                <td>Project Manager</td>
-            </tr>
-        </tbody>
-    </table> -->
