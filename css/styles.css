@@ -78,6 +78,8 @@ button {
 button:hover {
     background-color: dodgerblue;
     cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition: 1.5s;
 }
 
 fieldset {
@@ -110,6 +112,21 @@ legend {
 
 .textarea {
     margin-top: 20px;
+}
+
+/*========UI Element States Psuedo-Classes========*/
+
+input:focus,
+textarea:focus {
+    border-color: #52bab3;
+}
+
+input[type="checkbox"]:checked + label {
+    font-weight: bold;
+}
+
+input[type="radio"]:checked + label {
+    font-weight: bold;
 }
 
 /*========Newsletter========*/
