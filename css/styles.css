@@ -9,6 +9,10 @@ header {
     padding: 5px;
 }
 
+.container {
+    visibility: hidden;
+}
+
 /*========Second Section========*/
 
 .secondSection {
@@ -218,6 +222,12 @@ tfoot td {
 
 /*========Media Queries========*/
 
+@media (max-width: 767px) {
+    .secondSection {
+        margin-top: -100px;
+    }
+}
+
 @media (min-width: 768px){
     form {
         width: 500px;
@@ -231,16 +241,57 @@ tfoot td {
 
     #hr1, 
     #hr2 {
-        width: 37%;
+        width: 36%;
     }
 
     header h3,
-    #p1, {
+    #p1 {
         font-size: 2em;
     }
 
     #p2,
     footer {
         font-size: 1.2em;
+    }
+
+/*========Navigation========*/
+    .container {
+        visibility: visible;
+        padding: 10px;
+        background: #fff;
+        border-radius: 5px;
+        margin: 45px auto;
+        box-shadow: 0 2.5px 0 0 rgba(0,0,0,0.3);
+    }
+    .item {
+        color: #fff;
+        padding: 15px;
+        margin: 5px;	
+        background: dodgerblue;
+        border-radius: 3px;
+    }
+
+    .firstSection {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        margin: 0;
+    }
+
+    .item-1 {
+        margin-right: auto;
+    }
+
+    a:link {
+        color:white;
+        text-decoration: none;
+    }
+
+    a:visited {
+        color: white;
+    }
+
+    a:hover {
+        background-color: blue;
     }
 }
