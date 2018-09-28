@@ -169,9 +169,6 @@ textarea::placeholder {
 
 table {
     max-width: 100%;
-    margin: 20px 0;
-    padding-left: 10px;
-    padding-right: 20px;
 }
   
 caption {
