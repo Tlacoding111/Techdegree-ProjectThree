@@ -223,9 +223,9 @@ table {
         flex: 1 100px;
         max-width: 100px;
     }
-        
-    li input,
-    li select {
+    
+    li select,
+    li input {
         flex: 2 650px;  
     }
 
