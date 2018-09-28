@@ -168,7 +168,7 @@ textarea::placeholder {
 /*========Table========*/
 
 table {
-    width: 100%;
+    max-width: 100%;
     margin: 20px 0;
     padding-left: 10px;
     padding-right: 20px;
