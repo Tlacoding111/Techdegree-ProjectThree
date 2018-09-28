@@ -1,10 +1,14 @@
-/*========Heading========*/
+/*========Heading & Footer========*/
 
-header {
+body {
+    font-family: "Arimo", serif;
+}
+
+header,
+footer {
     text-align: center;
     color: white;
     background-color: #111d30;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     width: 100%;
     padding: 5px;
 }
@@ -138,8 +142,10 @@ input[type="radio"]:checked + label {
     font-weight: bold;
 }
 
-input::placeholder {
-    text-align: right;
+input::placeholder,
+textarea::placeholder {
+    text-align: left;
+    opacity: .5;
 }
 
 /*========Newsletter========*/
@@ -156,12 +162,6 @@ input::placeholder {
 
 .reset {
     background-color: #4bc970;
-}
-
-/*========Footer========*/
-
-footer{
-    text-align: center;
 }
 
 
