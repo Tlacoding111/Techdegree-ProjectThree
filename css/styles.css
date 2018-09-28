@@ -1,8 +1,14 @@
-/*========Heading & Footer========*/
+/*========Basic Element Styles========*/
 
 body {
     font-family: "Arimo", serif;
 }
+
+li {
+    list-style-type: none;
+}
+
+/*========Heading & Footer========*/
 
 header,
 footer {
@@ -207,6 +213,16 @@ table {
     #p2,
     footer {
         font-size: 1.2em;
+    }
+
+    li label {
+        flex: 1 150px;
+        max-width: 150px;
+      }
+      
+    li input,
+    li select {
+       flex: 2 550px;  
     }
 
 /*========Navigation========*/
