@@ -223,6 +223,12 @@ tfoot td {
     .secondSection {
         margin-top: -100px;
     }
+
+    table {
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 3%;
+    }
 }
 
 @media (min-width: 768px){
