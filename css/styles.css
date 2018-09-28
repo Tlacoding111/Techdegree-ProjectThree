@@ -25,12 +25,12 @@ footer {
 
 #hr1 {
     border: 2px solid black;
-    width: 80%;
+    width: 88%;
 }
 
 #hr2 {
     border: 2px solid gray;
-    width: 80%;
+    width: 88%;
 }
 
 #p1 {
@@ -164,58 +164,11 @@ textarea::placeholder {
     background-color: #4bc970;
 }
 
-
 /*========Table========*/
 
 table {
-    max-width: 100%;
+    visibility: hidden;
 }
-  
-caption {
-    font-size: 1.6em;
-    font-weight: 400;
-    padding: 10px 0;
-}
-
-thead th {
-    font-weight: 400;
-    background: #8a97a0;
-    color: #FFF;
-    border: 3px solid black;
-}
-
-tr {
-    background: #f4f7f8;
-    border-bottom: 1px solid #FFF;
-    margin-bottom: 5px;
-}
-
-tr:nth-child(odd) {
-    background: whitesmoke;
-}
-
-th, td {
-    text-align: left;
-    padding: 10px;
-    font-weight: 300;
-    border: 2px solid black;
-}
-
-tfoot tr {
-    background: none;
-}
-
-tfoot td {
-    padding: 10px 2px;
-    font-size: 0.7em;
-    font-style: italic;
-    color: #8a97a0;
-}
-
-.name {
-    font-weight: bold;
-    background: dodgerblue; 
-} 
 
 /*========Media Queries========*/
 
@@ -224,10 +177,9 @@ tfoot td {
         margin-top: -100px;
     }
 
-    table {
-        margin-left: 2%;
-        margin-right: 2%;
-        margin-bottom: 3%;
+    form {
+        margin-top: 25px;
+        margin-bottom: -90px;
     }
 }
 
@@ -297,4 +249,58 @@ tfoot td {
     a:hover {
         background-color: blue;
     }
+
+/*========Table========*/
+
+    table {
+        visibility: visible;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    caption {
+        font-size: 1.6em;
+        font-weight: 400;
+        padding: 10px 0;
+    }
+
+    thead th {
+        font-weight: 400;
+        background: #8a97a0;
+        color: #FFF;
+        border: 3px solid black;
+    }
+
+    tr {
+        background: #f4f7f8;
+        border-bottom: 1px solid #FFF;
+        margin-bottom: 5px;
+    }
+
+    tr:nth-child(odd) {
+        background: whitesmoke;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 10px;
+        font-weight: 300;
+        border: 2px solid black;
+    }
+
+    tfoot tr {
+        background: none;
+    }
+
+    tfoot td {
+        padding: 10px 2px;
+        font-size: 0.7em;
+        font-style: italic;
+        color: #8a97a0;
+    }
+
+    .name {
+        font-weight: bold;
+        background: dodgerblue; 
+    } 
 }
