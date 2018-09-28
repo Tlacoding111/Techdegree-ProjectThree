@@ -215,14 +215,18 @@ table {
         font-size: 1.1em;
     }
 
-    li label {
-        flex: 1 150px;
-        max-width: 150px;
-      }
+    li {
+        display: flex;
+    }
       
+    li label {
+        flex: 1 100px;
+        max-width: 100px;
+    }
+        
     li input,
     li select {
-       flex: 2 550px;  
+        flex: 2 650px;  
     }
 
 /*========Navigation========*/
