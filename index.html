@@ -37,7 +37,7 @@
 
             <fieldset class="contact">
                 <legend><span class="number">1</span><strong>Contact Information</strong></legend>
-
+            <ul>
                 <li>
                 <label for="name">Name:</label>
                     <input type="text" id="name" name="user_name" placeholder="Required" Required>
@@ -62,10 +62,10 @@
                 <label for="city">City:</label>
                     <input type="text" id="city" name="user_city" placeholder="Required" Required>
                 </li>
-                
+            </ul>
                 <div class="state">
                     <label for="state">State:</label>
-                    <select id="state" name="user_state" Required>
+                    <select id="state" name="user_state">
                         <optgroup label="A">
                             <option value="alabama">Alabama</option>
                             <option value="alaska">Alaska</option>
@@ -163,10 +163,12 @@
                 </div>
 
                 <div class="zip">
-                <li>
-                <label for="zipcode">Zip Code:</label>
-                    <input type="number" id="zipcode" name="user_zipcode" placeholder="Required" Required>
-                </li>
+                    <ul>
+                        <li>
+                        <label for="zipcode">Zip Code:</label>
+                            <input type="number" id="zipcode" name="user_zipcode" placeholder="Required" Required>
+                        </li>
+                    </ul>
                 </div>
 
             </fieldset>
@@ -216,10 +218,8 @@
                         <th scope="col">Job Role</th>
                     </tr>
                 </thead>
-                <tfoot>
-                    <td colspan="3">Above are members who filled out the form.</td>
-                </tfoot>
-  
+                
+                <tbody>
                     <tr>
                         <th scope="row" class="name">Brad Pitt</th>
                         <td>B.Pitt@gmail.com</td>
@@ -235,6 +235,13 @@
                         <td>B.Carter@gmail.com</td>
                         <td>Project Manager</td>
                     </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Above are members who filled out the form.</td>
+                    </tr>
+                </tfoot>
             </table>
 
         <footer>
