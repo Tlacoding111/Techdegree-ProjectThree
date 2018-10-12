@@ -27,6 +27,7 @@ footer {
 
 .secondSection {
     text-align: center;
+    margin-top: -100px;
 }
 
 #hr1 {
@@ -56,6 +57,9 @@ form {
     background: lightgray;
     border: 2px solid black;
     border-radius: 5px;
+
+    margin-top: 25px;
+    margin-bottom: -90px;
 }
 
 #sign {
@@ -65,7 +69,8 @@ form {
 
 input[type="text"],
 input[type="email"],
-input[type="number"] {
+input[type="tel"],
+input[type="number"]{
     color: blue;
     font-weight: bold;
     background: whitesmoke;
@@ -178,20 +183,15 @@ table {
 
 /*========Media Queries========*/
 
-@media (max-width: 767px) {
-    .secondSection {
-        margin-top: -100px;
-    }
-
-    form {
-        margin-top: 25px;
-        margin-bottom: -90px;
-    }
-}
-
 @media (min-width: 768px){
+    .secondSection {
+        margin-top: 0;
+    }
+    
     form {
         width: 500px;
+        margin-top: 0; 
+        margin-bottom: 0;
     }
 
     .inln {
