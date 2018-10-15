@@ -226,7 +226,12 @@ table {
     
     li select,
     li input {
-        flex: 2 650px;  
+        flex: 2 300px;
+        margin-bottom: 15px;  
+    }
+
+    li #zipcode {
+        max-width: 25%;
     }
 
 /*========Navigation========*/
